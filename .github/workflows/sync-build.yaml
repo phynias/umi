@@ -55,7 +55,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-      if: ${{ steps.sync.outputs.has_new_commits == 'true' || || github.event.inputs.force_build == 'true' }}
+      if: ${{ steps.sync.outputs.has_new_commits == 'true' || github.event.inputs.force_build == 'true' }}
 
     - name: Build and push Docker images
       uses: docker/build-push-action@v2.10.0
@@ -63,7 +63,7 @@ jobs:
         context: "${{ github.workspace }}"
         push: true
         tags: phynias/umi:latest # update for your image
-      if: ${{ steps.sync.outputs.has_new_commits == 'true' || || github.event.inputs.force_build == 'true' }}
+      if: ${{ steps.sync.outputs.has_new_commits == 'true' || github.event.inputs.force_build == 'true' }}
 
     - name: No new commits
       if: steps.sync.outputs.has_new_commits == 'false'
