@@ -1,4 +1,4 @@
-name: 'Upstream Sync'
+name: 'Upstream Sync & Build Docker Image'
 
 on:
   schedule:
@@ -15,7 +15,7 @@ on:
 jobs:
   sync_latest_from_upstream:
     runs-on: ubuntu-latest
-    name: Sync latest commits from upstream repo
+    name: Sync latest commits from upstream repo & build docker image
 
     steps:
     # REQUIRED step

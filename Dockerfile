@@ -1,5 +1,5 @@
 # Developpment stage
-FROM node:12.18-alpine AS base-builder
+FROM node:18-alpine
 RUN apk update
 RUN apk add --no-cache python make g++
 RUN apk add --no-cache libc6-compat
