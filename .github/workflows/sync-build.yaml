@@ -5,12 +5,12 @@ on:
     - cron: "0 23 * * *"
 
   workflow_dispatch:  # click the button on Github repo!
-  inputs:
-    force_build:
-      description: 'Force docker image build.'
-      default: false
-      required: false
-      type: boolean
+    inputs:
+      force_build:
+        description: 'Force docker image build.'
+        default: false
+        required: false
+        type: boolean
 
 jobs:
   sync_latest_from_upstream:
