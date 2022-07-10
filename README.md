@@ -3,7 +3,7 @@
 > Better Crunchyroll
 
 
-Fork of remixz/umi with some of the prs applied.
+Fork of [remixz/umi](https://github.com/remixz/umi) with some of the prs applied.
 
 Also contains the [source](/umi-chrome-extension) for the chrome extension for running on your own custom url.
 
