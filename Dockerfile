@@ -1,4 +1,4 @@
-FROM node:8.9.4
+FROM node:14
 WORKDIR /usr/src/app
 ADD . /usr/src/app
 #RUN apt-get update && apt-get install -y nginx

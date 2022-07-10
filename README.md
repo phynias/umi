@@ -7,7 +7,7 @@ Fork of [remixz/umi](https://github.com/remixz/umi) with some of the prs applied
 
 Also contains the [source](/umi-chrome-extension) for the chrome extension for running on your own custom url.
 
-Docker image at [phynias/umi](https://hub.docker.com/repository/docker/phynias/umi) (listens on port 80)
+Docker image at [phynias/umi](https://hub.docker.com/repository/docker/phynias/umi) (listens on port 8080)
 
 I suggest running behind a proxy like traefik or nginx with an ssl termination.
 
